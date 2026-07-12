@@ -1,0 +1,134 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "noEmit": false,
+        "skipLibCheck": true,
+        "target": "ES2020",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": true,
+        "skipDefaultLibCheck": true,
+        "useDefineForClassFields": true,
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable",
+            "WebWorker"
+        ],
+        "allowImportingTsExtensions": true,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "paths": {
+            "@adddog/env": [
+                "./packages/env/src/index",
+                "../env/src/index",
+                "../packages/env/src/index",
+                "../../packages/env/src/index",
+                "../../../packages/env/src/index"
+            ],
+            "@rad/vite": [
+                "./packages/vite/src/index",
+                "../vite/src/index",
+                "../packages/vite/src/index",
+                "../../packages/vite/src/index",
+                "../../../packages/vite/src/index"
+            ],
+            "@adddog/build-configs/*": [
+                "./packages/publish/src/*",
+                "../publish/src/*",
+                "../packages/publish/src/*",
+                "../../packages/publish/src/*",
+                "../../../packages/publish/src/*"
+            ],
+            "@rad/logging": [
+                "./packages/logging/src/index",
+                "../logging/src/index",
+                "../packages/logging/src/index",
+                "../../packages/logging/src/index",
+                "../../../packages/logging/src/index"
+            ],
+            "@rad/config": [
+                "./packages/config/src/index",
+                "../config/src/index",
+                "../packages/config/src/index",
+                "../../packages/config/src/index",
+                "../../../packages/config/src/index"
+            ],
+            "@adddog/design-tokens/*": [
+                "./packages/design-tokens/*",
+                "../design-tokens/*",
+                "../packages/design-tokens/*",
+                "../../packages/design-tokens/*",
+                "../../../packages/design-tokens/*"
+            ],
+            "@adddog/eslint": [
+                "./packages/eslint",
+                "../eslint",
+                "../packages/eslint",
+                "../../packages/eslint",
+                "../../../packages/eslint",
+                "../../../../packages/eslint"
+            ],
+            "@adddog/eslint-plugin-rules": [
+                "./packages/eslint-plugin-rules",
+                "../eslint-plugin-rules",
+                "../packages/eslint-plugin-rules",
+                "../../packages/eslint-plugin-rules",
+                "../../../packages/eslint-plugin-rules",
+                "../../../../packages/eslint-plugin-rules"
+            ],
+            "@adddog/global-type-defs": [
+                "./packages/global-type-defs",
+                "../global-type-defs",
+                "../packages/global-type-defs",
+                "../../packages/global-type-defs",
+                "../../../packages/global-type-defs",
+                "../../../../packages/global-type-defs"
+            ],
+            "@rad/type-utils": [
+                "./packages/type-utils/src/index",
+                "../type-utils/src/index",
+                "../packages/type-utils/src/index",
+                "../../packages/type-utils/src/index",
+                "../../../packages/type-utils/src/index"
+            ]
+        },
+        "types": [
+            "jest",
+            "vite/client",
+            "vitest/globals"
+        ],
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "strictBuiltinIteratorReturn": true,
+        "alwaysStrict": true,
+        "useUnknownInCatchVariables": true,
+        "resolvePackageJsonExports": true,
+        "resolvePackageJsonImports": true,
+        "preserveConstEnums": true
+    },
+    "include": [
+        "./e2e",
+        "playwright.config.ts",
+        "./src",
+        "tailwind.config.ts",
+        "vite.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ]
+}

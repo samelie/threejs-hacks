@@ -1,0 +1,63 @@
+{
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": true,
+        "skipDefaultLibCheck": true,
+        "exactOptionalPropertyTypes": false,
+        "noUncheckedIndexedAccess": true,
+        "noErrorTruncation": true,
+        "traceResolution": false,
+        "noPropertyAccessFromIndexSignature": false,
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "module": "ESNext",
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable",
+            "WebWorker",
+            "esnext.asynciterable"
+        ],
+        "skipLibCheck": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": false,
+        "isolatedModules": true,
+        "moduleDetection": "force",
+        "noEmit": false,
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "erasableSyntaxOnly": true,
+        "types": [
+            "vite/client",
+            "vitest/globals"
+        ]
+    },
+    "include": [
+        "./e2e",
+        "playwright.config.ts",
+        "./src",
+        "tailwind.config.ts",
+        "vite.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ],
+    "watchOptions": {
+        "excludeDirectories": [
+            "**/node_modules",
+            "build",
+            "dist"
+        ],
+        "fallbackPolling": "dynamicPriority",
+        "synchronousWatchDirectory": true,
+        "watchDirectory": "UseFsEvents",
+        "watchFile": "UseFsEventsOnParentDirectory"
+    }
+}

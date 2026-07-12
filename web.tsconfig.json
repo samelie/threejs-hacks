@@ -1,0 +1,3 @@
+{
+  "include": ["./e2e", "playwright.config.ts", "./src", "tailwind.config.ts", "vite.config.ts"]
+}
